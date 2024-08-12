@@ -1,0 +1,122 @@
+body {
+  background-color: rgba(10, 39, 66, 0.8); /* Ink blue background with 20% transparency */
+  color: #0a0a0a; /* Neon green text */
+  font-family: 'Roboto', sans-serif;
+  background-image: url('https://media.giphy.com/media/UAq71l72QwjXG/giphy.gif'); /* Background image link */
+  background-size: cover; /* Ensure the background image covers the entire screen */
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.left-container {
+  width: 30%;
+  background-color: rgba(0, 0, 0, 0.2); /* Black background with 20% transparency */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgb(57, 84, 57);
+}
+
+.right-container {
+  width: 68%;
+  background-color: rgba(17, 18, 17, 0.5);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgb(9, 249, 1);
+}
+
+.gif-image {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.form-container {
+  margin: 20px;
+  background: rgba(0, 0, 0, 0.7); /* Black with 20% transparency */
+  color: white;
+  border-radius: 15px;
+  padding: 15px;
+  width: 50%; /* 50% of the screen width */
+  float: left; /* Align to the left side */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: Add shadow for better visibility */
+}
+  
+.container {
+  margin: 2px 2% 2px 2%; /* 20% margin from all sides */
+  padding: 2px;
+  width: 50%; /* Ensure the container takes up the remaining space */
+  float: left; /* Align to the right side */
+  background-color: rgb(63, 201, 50, 0.3); /* Dark blue with 20% transparency */
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.card {
+  background-color: #48e42c;
+  color: #0f0f0f;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+  h1, h5, h6 {
+    color: #0eff99;
+  }
+  
+  button {
+    background-color: #070808;
+    border: none;
+    color: #072a3b;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  
+  .logo {
+    width: 50px;
+    height: 50px;
+    color: black;
+    margin-top: 0;
+    margin-left: 2px;
+  }
+  
+  .myimg {
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 25px;
+  }
+  
+/* Vertical alignment for AI System card and buttons */
+.vertical-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.vertical-button {
+  margin-bottom: 10px; /* Space between buttons */
+  padding: 10px;
+  width: 100%; /* Full width */
+}
+.result-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.toggle-button {
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  width: 100%; /* Full width of the column */
+  border-radius: 5px;
+  text-align: center;
+  color: black;
+}

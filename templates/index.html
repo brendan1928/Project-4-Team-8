@@ -5,39 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Health Care Center</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"> <!-- Updated path -->
   </head>
-
-  <style>
-
-        .logo {
-            width: 50px;
-            height: 50px;
-            color: black;
-            margin-top: 0;
-            margin-left: 2px;
-        }
-
-        .myimg {
-            width: 50px;
-            height: 50px;
-            border: 2px solid black;
-            border-radius: 25px;
-        }
-
-
-
-
-    </style>
-</head>
-<body>
-    <!-- Navbar -->
+  <body>
+      <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <!-- Logo at the top-left corner -->
             <div class="logo">
-                <img class="myimg" src="{{ url_for('static', filename='heal.jpg') }}" alt="">
+                <img class="gif-image" src="https://media.giphy.com/media/2g8EYDN0VWFMY/giphy.gif" alt="GIF Image"/>
             </div>
-
             <a class="navbar-brand" href="#">Health Center</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -67,62 +44,66 @@
             </div>
         </div>
     </nav>
+    <div class="main-container">
+        <!-- Left Container for GIF -->
+      <div class="left-container">
+        <img src="https://i.pinimg.com/originals/f9/41/8e/f9418e8dfea9d656942880dac3c2d3c1.gif" alt="GIF Image" class="gif-image" />
+      </div>
 
+    <!-- main form of page -->
+     <!-- Right Container for Main Content -->
+     <div class="right-container">
+      <h6 class="mt-4 mb-4 text-left text-green" style="margin: 20px;">Smart Healthcare & Customized Medical Treatment Recommendations Powered by Machine Learning</h6>
+        <div class="form-container">
+            <form action="/predict" method="post">
+                <div class="form-group">
+                    <label for="symptoms">Select Symptoms:</label>
+                    <input type="text" class="form-control" id="symptoms" name="symptoms" placeholder="Type symptoms such as itching, sleeping, aching etc">
+                </div>
+                <br>
+                <button type="button" id="startSpeechRecognition" class="btn btn-primary" style="margin-left:3px;border:1px solid black; padding: 03px; font-size: 14px; background-color: #36454F; border-radius:20px;">
+                    Start Speech Recognition
+                </button>
+                <br>
 
-
-
-<!-- main form of page -->
-<h1 class="mt-4 my-4 text-center text-green">Health Center!!!</h1>
-<div class="container my-4 mt-4" style="background: black; color: white; border-radius: 15px; padding: 40px;">
-    <form action="/predict" method="post">
-        <div class="form-group">
-            <label for="symptoms">Select Symptoms:</label>
-            <input type="text" class="form-control", id="symptoms" name="symptoms" placeholder="type systems such as itching, sleeping, aching etc">
-
+                <!-- Display the transcribed text here -->
+                <div name="mysysms" id="transcription"></div>
+                {% if message %}
+                <p>{{ message }}</p>
+                {% endif %}
+                <br>
+                <button type="submit" class="btn btn-danger btn-lg" style="width: 100%; padding: 12px; margin-bottom: 5px; background-color: #FF2052;">Predict</button>
+            </form>
         </div>
-        <br>
-        <button type="button" id="startSpeechRecognition" class="btn btn-primary" style="margin-left:3px;border:1px solid white; border-radius:20px;">
-            Start Speech Recognition
-        </button>
-        <br>
-
-        <!-- Display the transcribed text here -->
-        <div name="mysysms" id="transcription"></div>
-
-        {% if message %}
-        <p>{{ message }}</p>
-        {% endif %}
-        <br>
-
-        <button type="submit" class="btn btn-danger btn-lg" style="width: 100%; padding: 14px; margin-bottom: 5px;">Predict</button>
-    </form>
-</div>
-
-
-
-
-
-
-
-
-{% if predicted_disease %}
-
 <!-- Results -->
-<h1 class="text-center my-4 mt-4">Our AI System Results</h1>
-<div class="container">
-
-    <div class="result-container">
-        <!-- Buttons to toggle display -->
-        <button class="toggle-button" data-bs-toggle="modal" data-bs-target="#diseaseModal" style="padding:4px;  margin: 5px 40px 5px 0; font-size:20px;font-weight:bold; width:140px; border-radius:5px; background:#F39334;color:black;">Disease</button>
-        <button class="toggle-button" data-bs-toggle="modal" data-bs-target="#descriptionModal" style="padding:4px; margin: 5px 40px 5px 0; font-size:20px;font-weight:bold; width:140px; border-radius:5px; background:#268AF3 ;color:black;">Description</button>
-        <button class="toggle-button" data-bs-toggle="modal" data-bs-target="#precautionModal" style="padding:4px; margin: 5px 40px 5px 0; font-size:20px;font-weight:bold; width:140px; border-radius:5px; background:#F371F9 ;color:black;">Precaution</button>
-        <button class="toggle-button" data-bs-toggle="modal" data-bs-target="#medicationsModal" style="padding:4px; margin: 5px 40px 5px 0; font-size:20px;font-weight:bold; width:140px;border-radius:5px; background:#F8576F ;color:black;">Medications</button>
-        <button class="toggle-button" data-bs-toggle="modal" data-bs-target="#workoutsModal" style="padding:4px; margin: 5px 40px 5px 0; font-size:20px;font-weight:bold; width:140px; border-radius:5px; background:#99F741 ;color:black;">Workouts</button>
-        <button class="toggle-button" data-bs-toggle="modal" data-bs-target="#dietsModal" style="padding:4px; margin: 5px 40px 5px 0; font-size:20px;font-weight:bold; width:140px; border-radius:5px; background:#E5E23D;color:black;">Diets</button>
+         {% if predicted_disease %}
+         <div class="container mt-4"> 
+            <h6 class="text-center my-4 mt-4">Personalized Results from our AI System</h6>
+            <!-- Use Bootstrap grid system to align buttons -->
+            <!-- Buttons to toggle display -->
+            <div class="row">
+                <div class="col-md-6 mb-2">
+                    <button class="toggle-button" data-bs-toggle="modal" data-bs-target="#diseaseModal" style="padding:1px; font-size:15px;font-weight:bold; width:100%; border-radius:5px; background:#800000;color:black;">Disease</button>
+                </div>
+                <div class="col-md-6 mb-2">
+                    <button class="toggle-button" data-bs-toggle="modal" data-bs-target="#descriptionModal" style="padding:1px; font-size:15px;font-weight:bold; width:100%; border-radius:5px; background:#268AF3;color:black;">Description</button>
+                </div>
+                <div class="col-md-6 mb-2">
+                    <button class="toggle-button" data-bs-toggle="modal" data-bs-target="#precautionModal" style="padding:1px; font-size:15px;font-weight:bold; width:100%; border-radius:5px; background:#FF0A6F;color:black;">Precaution</button>
+                </div>
+                <div class="col-md-6 mb-2">
+                    <button class="toggle-button" data-bs-toggle="modal" data-bs-target="#medicationsModal" style="padding:1px; font-size:15px;font-weight:bold; width:100%; border-radius:5px; background:#FF5F1F;color:black;">Medications</button>
+                </div>
+                <div class="col-md-6 mb-2">
+                    <button class="toggle-button" data-bs-toggle="modal" data-bs-target="#workoutsModal" style="padding:1px; font-size:15px;font-weight:bold; width:100%; border-radius:5px; background:#99F741;color:black;">Workouts</button>
+                </div>
+                <div class="col-md-6 mb-2">
+                    <button class="toggle-button" data-bs-toggle="modal" data-bs-target="#dietsModal" style="padding:1px; font-size:15px;font-weight:bold; width:100%; border-radius:5px; background:#4B0082;color:black;">Diets</button>
+                </div>
+            </div>
+        </div>
+        {% endif %}
     </div>
-</div>
-
-{% endif %}
 
 <!-- Disease Modal -->
     <div class="modal fade" id="diseaseModal" tabindex="-1" aria-labelledby="diseaseModalLabel" aria-hidden="true">
@@ -235,33 +216,31 @@
     </div>
 
 
+    <script>
+        const startSpeechRecognitionButton = document.getElementById('startSpeechRecognition');
+        const transcriptionDiv = document.getElementById('transcription');
 
-        <script>
-    const startSpeechRecognitionButton = document.getElementById('startSpeechRecognition');
-    const transcriptionDiv = document.getElementById('transcription');
+        startSpeechRecognitionButton.addEventListener('click', startSpeechRecognition);
 
-    startSpeechRecognitionButton.addEventListener('click', startSpeechRecognition);
+        function startSpeechRecognition() {
+            const recognition = new webkitSpeechRecognition(); // Use webkitSpeechRecognition for compatibility
 
-    function startSpeechRecognition() {
-        const recognition = new webkitSpeechRecognition(); // Use webkitSpeechRecognition for compatibility
+            recognition.lang = 'en-US'; // Set the language for recognition
 
-        recognition.lang = 'en-US'; // Set the language for recognition
+            recognition.onresult = function (event) {
+                const result = event.results[0][0].transcript;
+                transcriptionDiv.textContent = result;
+            };
 
-        recognition.onresult = function (event) {
-            const result = event.results[0][0].transcript;
-            transcriptionDiv.textContent = result;
-        };
+            recognition.onend = function () {
+                console.log('Speech recognition ended.');
+            };
 
-        recognition.onend = function () {
-            console.log('Speech recognition ended.');
-        };
-
-        recognition.start();
-    }
-</script>
+            recognition.start();
+        }
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-</body>
-
+  </body>
 </html>
 
