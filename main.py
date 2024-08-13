@@ -237,6 +237,9 @@ def index():
 @app.route('/predict', methods=['GET', 'POST'])
 def home():
     if request.method == 'POST':
+        name = request.form.get('name')
+        age = request.form.get('age')
+        location = request.form.get('location')
         symptoms = request.form.get('symptoms')
         # mysysms = request.form.get('mysysms')
         # print(mysysms)
@@ -244,6 +247,11 @@ def home():
         if symptoms =="Symptoms":
             message = "Please either write symptoms or you have written misspelled symptoms"
             return render_template('index.html', message=message)
+        
+        if not symptoms:
+            message = "Please enter symptoms."
+            return render_template('index.html', message=message) 
+        
         else:
 
             # Split the user's input into a list of symptoms (assuming they are comma-separated)
@@ -254,11 +262,11 @@ def home():
             dis_des, precautions, medications, rec_diet, workout = helper(predicted_disease)
 
             my_precautions = []
-            for i in precautions[0]:
+            for i in precautions:
                 my_precautions.append(i)
 
-            return render_template('index.html', predicted_disease=predicted_disease, dis_des=dis_des,
-                                   my_precautions=my_precautions, medications=medications, my_diet=rec_diet,
+            return render_template('index.html', name=name, age=age, location=location, symptoms=symptoms,  predicted_disease=predicted_disease, dis_des=dis_des,
+                                   my_precautions=my_precautions[0], medications=medications, my_diet=rec_diet,
                                    workout=workout)
 
     return render_template('index.html')

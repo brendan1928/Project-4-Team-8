@@ -9,7 +9,7 @@
   </head>
   <body>
       <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark custom-navbar">
         <div class="container-fluid">
             <!-- Logo at the top-left corner -->
             <div class="logo">
@@ -54,9 +54,22 @@
      <!-- Right Container for Main Content -->
      <div class="right-container">
       <h6 class="mt-4 mb-4 text-left text-green" style="margin: 20px;">Smart Healthcare & Customized Medical Treatment Recommendations Powered by Machine Learning</h6>
-        <div class="form-container">
+      <div class="content-wrapper">
+      <div class="form-container">
             <form action="/predict" method="post">
                 <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group mt-3">
+                    <label for="age">Age:</label>
+                    <input type="number" class="form-control" id="age" name="age" placeholder="Enter your age" required>
+                </div>
+                <div class="form-group mt-3">
+                    <label for="location">Location:</label>
+                    <input type="text" class="form-control" id="location" name="location" placeholder="Enter your location" required>
+                </div>
+                <div class="form-group mt-3">
                     <label for="symptoms">Select Symptoms:</label>
                     <input type="text" class="form-control" id="symptoms" name="symptoms" placeholder="Type symptoms such as itching, sleeping, aching etc">
                 </div>
@@ -76,9 +89,17 @@
             </form>
         </div>
 <!-- Results -->
+    <!-- Float Results to the Left within the Right Container -->
+
+    <div class="results-container" style="float:right; width:100%;">
          {% if predicted_disease %}
          <div class="container mt-4"> 
-            <h6 class="text-center my-4 mt-4">Personalized Results from our AI System</h6>
+            <h6 class="text-center my-4 mt-4" style="padding:1px; font-size:18px; color:#39FF14; font-weight:bold;">Personalized Results from our AI System</h6>
+            <p><strong>Name:</strong> {{ name }}</p>
+            <p><strong>Age:</strong> {{ age }}</p>
+            <p><strong>Location:</strong> {{ location }}</p>
+            <p><strong>Symptoms:</strong> {{ symptoms }}</p>
+            <p><strong>Predicted Disease:</strong> {{ predicted_disease }}</p>
             <!-- Use Bootstrap grid system to align buttons -->
             <!-- Buttons to toggle display -->
             <div class="row">
