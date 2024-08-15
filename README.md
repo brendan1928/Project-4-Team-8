@@ -21,22 +21,22 @@ The data is then loaded in and stored in a database; the AI model pulls from thi
 <br/>
 
 <br/>
-**Data Sources**
+Data Sources
 <br/>
-**Kaggle Diagnoses Data**
+Kaggle Diagnoses Data
 <br/>
 https://www.kaggle.com/datasets/noorsaeed/medicine-recommendation-system-dataset/data
 <br/>
-**CBC Healthcare System is Overburdened**
+CBC Healthcare System is Overburdened
 <br/>
 https://www.cbc.ca/news/canada/toronto/healthcare-staff-union-survey-1.7073334
 <br/>
 <br/>
-**Evaluation Standards**
+Evaluation Standards
 <br/>
 The model will be evaluated on a points-system with 100 potential points.
 <br/>
-**Data Model Implementation (25 points)**
+Data Model Implementation (25 points)
 <br/>
 •	A Python script initializes, trains, and evaluates a model (10 points)
 <br/>
@@ -46,19 +46,19 @@ The model will be evaluated on a points-system with 100 potential points.
 <br/>
 •	The model demonstrates meaningful predictive power at least 75% classification accuracy or 0.80 R-squared. (5 points)
 <br/>
-**Data Model Optimization (25 points)**
+Data Model Optimization (25 points)
 <br/>
 •	The model optimization and evaluation process showing iterative changes made to the model and the resulting changes in model performance is documented in either a CSV/Excel table or in the Python script itself (15 points)
 <br/>
 •	Overall model performance is printed or displayed at the end of the script (10 points)
 <br/>
-**GitHub Documentation (25 points)**
+GitHub Documentation (25 points)
 <br/>
 •	GitHub repository is free of unnecessary files and folders and has an appropriate .gitignore in use (10 points)
 <br/>
 •	The README is customized as a polished presentation of the content of the project (15 points)
 <br/>
-**Group Presentation (25 points)**
+Group Presentation (25 points)
 <br/>
 •	All group members speak during the presentation. (5 points)
 <br/>
@@ -69,6 +69,6 @@ The model will be evaluated on a points-system with 100 potential points.
 •	The presentation maintains audience interest. (5 points)
 <br/>
 <br/>
-**Conclusion**
+Conclusion
 <br/>
 The model concludes that there is a very large opportunity for the use of AI/ML in the Healthcare industry; while risk of inaccuracies necessitate some level of human supervision, high initial accuracy rates over a large number of requests indicate that these tools can be used as a filtering mechanism to ‘bucket’ diagnoses, flagging responses with similar historically inaccurate results.
