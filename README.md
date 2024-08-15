@@ -72,3 +72,8 @@ Group Presentation (25 points)
 Conclusion
 <br/>
 The model concludes that there is a very large opportunity for the use of AI/ML in the Healthcare industry; while risk of inaccuracies necessitate some level of human supervision, high initial accuracy rates over a large number of requests indicate that these tools can be used as a filtering mechanism to ‘bucket’ diagnoses, flagging responses with similar historically inaccurate results.
+
+<br/>
+Contact
+<br/>
+For any comments or suggestions on the model, feel free to check the Contacts page on either app in the repo for task breakdown and ownership. Contributors' GitHub pages are also included in the list of Contributors to the repo.
