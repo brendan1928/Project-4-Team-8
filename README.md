@@ -14,6 +14,7 @@ The Personalized Medical Recommendation System is designed to empower users with
 This system enhances healthcare accessibility by offering accurate, real-time medical advice, tailored to each user's unique needs, while maintaining high standards of privacy and security.
 
 ## Project Statement 2: Pneumonia Detection App Using Deep Learning (Image Based Input)
+NOTE: All the files regarding this app, ML model, python file for code, Data set for input are located under PNEUMONIA-DETECTION_DEEP LEARNING_FOLDER
 ### Overview:
 The Pneumonia Detection App is a desktop application designed to assist in the early detection of pneumonia using chest X-ray images. Developed with a focus on ease of use and accuracy, the application employs deep learning models to analyze X-ray images, providing real-time feedback through a user-friendly interface built with PyQt5.
 
