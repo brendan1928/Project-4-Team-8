@@ -27,8 +27,8 @@ The Pneumonia Detection App is a desktop application designed to assist in the e
 ### Outcome:
 This app serves as a valuable tool for healthcare professionals and individuals alike, providing a reliable, real-time method for pneumonia detection, thereby facilitating timely medical intervention.
 <br />
-**The Problem Statement**
-<br />
+## The Problem Statement 
+
 The AI model attempts to answer the following questions in an attempt to quell the overburdened healthcare system Canada is currently experiencing:
 <br/>
 •	Can a professional’s expertise be reflected in a single model, allowing for higher volume of diagnoses?
@@ -38,8 +38,8 @@ The AI model attempts to answer the following questions in an attempt to quell t
 •	Can this model and data be used proactively for resource allocation & funding decisions?
 <br/>
 
-**The Model**
-<br/>
+## The Model
+
 This project uses diagnoses data to create clear links between symptoms and diseases, as well as provides recommendations on how to diet and exercise according to the predicted disease. It also supports photoimaging of the lungs to flag if an infection is detected.
 <br/>
 The data is first loaded in to Python with the Pandas library and cleaned to ensure optimal performance of the database and model; outputs are validated using the Matplotlib and Seaborn libraries.
@@ -47,9 +47,9 @@ The data is first loaded in to Python with the Pandas library and cleaned to ens
 The data is then loaded in and stored in a database; the AI model pulls from this database, and uses a Single Vector Machine model to equate symptoms with diseases. It does this via a flask-hosted app where the user can type in up to four symptoms – the app has input validation and synonym dictionaries to help guide the user.
 <br/>
 
-<br/>
-Data Sources
-<br/>
+
+## Data Sources
+
 Kaggle Diagnoses Data
 <br/>
 https://www.kaggle.com/datasets/noorsaeed/medicine-recommendation-system-dataset/data
