@@ -23,7 +23,6 @@ The data is then loaded in and stored in a database; the AI model pulls from thi
 <br/>
 **Data Sources**
 <br/>
-<br/>
 **Kaggle Diagnoses Data**
 <br/>
 https://www.kaggle.com/datasets/noorsaeed/medicine-recommendation-system-dataset/data
