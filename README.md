@@ -95,12 +95,38 @@ Group Presentation (25 points)
 <br/>
 •	The presentation maintains audience interest. (5 points)
 <br/>
-<br/>
-Conclusion
-<br/>
+
+## Challenges and Solutions ( Optimization,  Logging & Formation)
+1. Data Cleaning
+- Optimization: Performance bottlenecks were resolved by replacing inefficient loops with vectorized operations.
+- Logging: Introduced logging to track cleaning steps like missing value handling and outlier detection.
+- Formatting: Standardized inconsistent formats across datasets using custom functions.
+
+2. Model Building
+- Optimization: Employed Grid Search and Random Search to reduce hyperparameter tuning time.
+- Logging: Added detailed logs for model training, validation scores, and hyperparameters.
+- Formatting: Ensured consistent feature scaling and encoding to avoid model fitting errors.
+
+3. Dictionaries and Synonyms
+- Optimization: Improved synonym mapping speed by using hash maps.
+- Logging: Implemented version control to track dictionary updates and their effects.
+- Formatting: Standardized synonym formats to maintain data consistency.
+
+4. Auto-Correcting Functions
+- Optimization: Refined auto-correct algorithms to enhance processing speed.
+- Logging: Added logging to trace applied corrections for better error analysis.
+- Formatting: Ensured corrected inputs aligned with standardized formats.
+
+5. Schema Diagrams and Relationships
+- Optimization: Simplified schema design by normalizing data for efficient queries.
+- Logging: Established version control for schema changes.
+- Formatting: Regularized data types and clarified relationships to ensure smooth integration.
+
+# Conclusion
+
 The model concludes that there is a very large opportunity for the use of AI/ML in the Healthcare industry; while risk of inaccuracies necessitate some level of human supervision, high initial accuracy rates over a large number of requests indicate that these tools can be used as a filtering mechanism to ‘bucket’ diagnoses, flagging responses with similar historically inaccurate results.
 
-<br/>
-Contact
-<br/>
+
+# Contact
+
 For any comments or suggestions on the model, feel free to check the Contacts page on either app in the repo for task breakdown and ownership. Contributors' GitHub pages are also included in the list of Contributors to the repo.
