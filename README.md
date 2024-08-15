@@ -1,5 +1,5 @@
 # About the Project
-## Project Statement 1: Personalized Medical Recommendation System (Text Bsed Input)
+## Project Statement 1: Personalized Medical Recommendation System (Text Based Input)
 ### Overview:
 The Personalized Medical Recommendation System is designed to empower users with tailored healthcare guidance by leveraging advanced machine learning techniques. The system integrates user-provided symptoms and health data to predict potential diseases, recommend personalized medications, and suggest suitable workout routines. Implemented as a Flask API, the system ensures accessibility and scalability, making it available across various devices.
 
