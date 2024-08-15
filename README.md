@@ -23,11 +23,11 @@ The data is then loaded in and stored in a database; the AI model pulls from thi
 <br/>
 **Data Sources**
 <br/>
-Kaggle Diagnoses Data
+**Kaggle Diagnoses Data**
 <br/>
 https://www.kaggle.com/datasets/noorsaeed/medicine-recommendation-system-dataset/data
 <br/>
-****CBC Healthcare System is Overburdened****
+**CBC Healthcare System is Overburdened**
 <br/>
 https://www.cbc.ca/news/canada/toronto/healthcare-staff-union-survey-1.7073334
 <br/>
