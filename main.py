@@ -292,6 +292,10 @@ def developer():
 def blog():
     return render_template("blog.html")
 
+# about view funtion and path
+@app.route('/upload',  methods=['GET', 'POST'])
+def upload():
+    return render_template("upload.html")
 
 if __name__ == '__main__':
 
