@@ -1,5 +1,5 @@
 # About the Project
-## Project Statement 1: Personalized Medical Recommendation System
+## Project Statement 1: Personalized Medical Recommendation System (Text Bsed Input)
 ### Overview:
 The Personalized Medical Recommendation System is designed to empower users with tailored healthcare guidance by leveraging advanced machine learning techniques. The system integrates user-provided symptoms and health data to predict potential diseases, recommend personalized medications, and suggest suitable workout routines. Implemented as a Flask API, the system ensures accessibility and scalability, making it available across various devices.
 
@@ -13,7 +13,7 @@ The Personalized Medical Recommendation System is designed to empower users with
 ### Outcome:
 This system enhances healthcare accessibility by offering accurate, real-time medical advice, tailored to each user's unique needs, while maintaining high standards of privacy and security.
 
-## Project Statement 2: Pneumonia Detection App Using Deep Learning
+## Project Statement 2: Pneumonia Detection App Using Deep Learning (Image Based Input)
 ### Overview:
 The Pneumonia Detection App is a desktop application designed to assist in the early detection of pneumonia using chest X-ray images. Developed with a focus on ease of use and accuracy, the application employs deep learning models to analyze X-ray images, providing real-time feedback through a user-friendly interface built with PyQt5.
 
