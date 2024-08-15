@@ -11,7 +11,7 @@ The AI model attempts to answer the following questions in an attempt to quell t
 •	Can this model and data be used proactively for resource allocation & funding decisions?
 <br/>
 
-****The Model****
+**The Model**
 <br/>
 This project uses diagnoses data to create clear links between symptoms and diseases, as well as provides recommendations on how to diet and exercise according to the predicted disease. It also supports photoimaging of the lungs to flag if an infection is detected.
 <br/>
@@ -21,7 +21,7 @@ The data is then loaded in and stored in a database; the AI model pulls from thi
 <br/>
 
 <br/>
-Data Sources
+**Data Sources**
 <br/>
 Kaggle Diagnoses Data
 <br/>
