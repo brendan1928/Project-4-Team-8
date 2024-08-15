@@ -20,7 +20,9 @@ The data is first loaded in to Python with the Pandas library and cleaned to ens
 The data is then loaded in and stored in a database; the AI model pulls from this database, and uses a Single Vector Machine model to equate symptoms with diseases. It does this via a flask-hosted app where the user can type in up to four symptoms – the app has input validation and synonym dictionaries to help guide the user.
 <br/>
 
+<br/>
 **Data Sources**
+<br/>
 <br/>
 **Kaggle Diagnoses Data**
 <br/>
@@ -30,11 +32,12 @@ https://www.kaggle.com/datasets/noorsaeed/medicine-recommendation-system-dataset
 <br/>
 https://www.cbc.ca/news/canada/toronto/healthcare-staff-union-survey-1.7073334
 <br/>
+<br/>
 **Evaluation Standards**
 <br/>
 The model will be evaluated on a points-system with 100 potential points.
 <br/>
-Data Model Implementation (25 points)
+**Data Model Implementation (25 points)**
 <br/>
 •	A Python script initializes, trains, and evaluates a model (10 points)
 <br/>
@@ -44,19 +47,19 @@ Data Model Implementation (25 points)
 <br/>
 •	The model demonstrates meaningful predictive power at least 75% classification accuracy or 0.80 R-squared. (5 points)
 <br/>
-Data Model Optimization (25 points)
+**Data Model Optimization (25 points)**
 <br/>
 •	The model optimization and evaluation process showing iterative changes made to the model and the resulting changes in model performance is documented in either a CSV/Excel table or in the Python script itself (15 points)
 <br/>
 •	Overall model performance is printed or displayed at the end of the script (10 points)
 <br/>
-GitHub Documentation (25 points)
+**GitHub Documentation (25 points)**
 <br/>
 •	GitHub repository is free of unnecessary files and folders and has an appropriate .gitignore in use (10 points)
 <br/>
 •	The README is customized as a polished presentation of the content of the project (15 points)
 <br/>
-Group Presentation (25 points)
+**Group Presentation (25 points)**
 <br/>
 •	All group members speak during the presentation. (5 points)
 <br/>
@@ -65,6 +68,7 @@ Group Presentation (25 points)
 •	The content is relevant to the project. (10 points)
 <br/>
 •	The presentation maintains audience interest. (5 points)
+<br/>
 <br/>
 **Conclusion**
 <br/>
