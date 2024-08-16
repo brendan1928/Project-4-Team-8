@@ -26,7 +26,7 @@ This system enhances healthcare accessibility by offering accurate, real-time me
 - NOTE: All the files regarding this app, ML model, python file for code, Data set for input are located under `PNEUMONIA-detection_Deep-Learning_Chest-X-Ray-image-Recognition` Folder
 #
 - ML Model Notebook : https://github.com/brendan1928/Project-4-Team-8/blob/main/Pneumonia_Detection_Chest-XRay_image_recognition/ML_Model_Code_Roshni.ipynb
-- To run App : 
+- To run App : https://github.com/brendan1928/Project-4-Team-8/blob/main/Pneumonia_Detection_Chest-XRay_image_recognition/chest_xray_App_Roshni.py
 
 #
 ### Overview:
