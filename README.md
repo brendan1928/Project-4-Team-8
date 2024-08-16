@@ -3,7 +3,9 @@
 
 ### Link to Presentation : https://www.canva.com/design/DAGNsaCV2aE/t70h1j2Ws90ylKeiccywUg/edit
 - ML Model Notebook : https://github.com/brendan1928/Project-4-Team-8/blob/main/HealthCareML_Code_Roshni.ipynb  
-- To run Flask-API dash board : https://github.com/brendan1928/Project-4-Team-8/blob/main/main.py  
+- To run Flask-API dash board : https://github.com/brendan1928/Project-4-Team-8/blob/main/main.py
+- Dashboard link through Terminal
+- ![image](https://github.com/user-attachments/assets/4e5f3b45-ec5c-42c1-9ce7-ea9ff73fbac6)
 
 ### Overview:
 The Personalized Medical Recommendation System is designed to empower users with tailored healthcare guidance by leveraging advanced machine learning techniques. The system integrates user-provided symptoms and health data to predict potential diseases, recommend personalized medications, and suggest suitable workout routines. Implemented as a Flask API, the system ensures accessibility and scalability, making it available across various devices.
@@ -22,6 +24,10 @@ This system enhances healthcare accessibility by offering accurate, real-time me
 > [!IMPORTANT]
 > Key information users need to know to achieve their goal.  
 - NOTE: All the files regarding this app, ML model, python file for code, Data set for input are located under `PNEUMONIA-detection_Deep-Learning_Chest-X-Ray-image-Recognition` Folder
+#
+- ML Model Notebook : Pneumonia_Detection_Chest-XRay_image_recognition\ML_Model_Code_Roshni.ipynb
+- To run App : Pneumonia_Detection_Chest-XRay_image_recognition\chest_xray_App_Roshni.py
+
 #
 ### Overview:
 The Pneumonia Detection App is a desktop application designed to assist in the early detection of pneumonia using chest X-ray images. Developed with a focus on ease of use and accuracy, the application employs deep learning models to analyze X-ray images, providing real-time feedback through a user-friendly interface built with PyQt5.
